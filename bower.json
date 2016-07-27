@@ -1,0 +1,17 @@
+{
+  "name": "workspace",
+  "description": "Job Finding App",
+  "main": "index.js",
+  "authors": [
+    "Leonell A Lagumbay"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "angular": "^1.5.8",
+    "extjs": "^6.0.0-640",
+    "bootstrap": "^3.3.7"
+  }
+}
