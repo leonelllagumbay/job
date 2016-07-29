@@ -12,6 +12,7 @@ var jobSchema = mongoose.Schema({
 
 var Job = mongoose.model('Job', jobSchema);
 
+
 exports.seedJobs = function() {
     return new Promise(function(resolve, reject) {
         Job.find({}).exec(function(error, collection) {
