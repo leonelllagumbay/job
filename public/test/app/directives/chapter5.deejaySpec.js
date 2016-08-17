@@ -17,7 +17,7 @@ describe("deejay spec", function() {
         var divClasses = element.find('div').attr('class');
         $window.name = 'popup';
         //expect(divClasses).toContain('popup');
-        expect(divClasses.split(/\s+/g)).toContain('popup');
+        expect(divClasses.split(/\s+/g)).toContain('popups');
     })
 });
 
