@@ -1,4 +1,4 @@
-var express = require("express");
+/*var express = require("express");
 var mongoose = require('mongoose');
 var jobModel = require('./models/Job')
 
@@ -31,5 +31,24 @@ con.once('open', function() {
 })
 
 
+
+app.listen(process.env.PORT, process.env.IP)
+
+*/
+
+var express = require("express");
+
+var app = express();
+
+app.set("views", __dirname);
+app.set("view engine", "jade");
+
+app.use(express.static(__dirname + '/public'))
+//app.use(express.static(__dirname));
+
+app.get("*", function(req, res) {
+    res.render("index");
+    //res.render("test/SpecRunner");
+});
 
 app.listen(process.env.PORT, process.env.IP)
